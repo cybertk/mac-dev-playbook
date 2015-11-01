@@ -5,7 +5,7 @@ configure_sudoers: yes
 
 homebrew_installed_packages:
   - git
-  - cask
+  - brew-cask
 
 homebrew_taps:
   - caskroom/cask
