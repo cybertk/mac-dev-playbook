@@ -1,5 +1,5 @@
 ---
-- hosts: vagrant
+- hosts: osx-ci-runner-template
 
   vars_files:
     - vars/main.yml
