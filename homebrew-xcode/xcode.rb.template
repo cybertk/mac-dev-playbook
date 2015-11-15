@@ -1,0 +1,12 @@
+cask :v1 => 'xcode' do
+  version '7.1'
+  sha256 "eaceba597bf6a4acdfd04ea996777fd374c4adbbb79c9728692b132a9d471324"
+
+  # To download Xcode.dmg, see http://stackoverflow.com/a/10335943/622662
+  url 'http://<%= hostName %>/Xcode_7.1.dmg'
+  name 'Xcode'
+  homepage 'https://developer.apple.com'
+  license :freemium
+
+  app 'Xcode.app'
+end

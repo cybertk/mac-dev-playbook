@@ -1,0 +1,4 @@
+# It's generated from xcode.rb.template
+xcode.rb
+
+*.dmg
