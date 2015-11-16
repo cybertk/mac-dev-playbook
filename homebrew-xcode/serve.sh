@@ -35,5 +35,8 @@ sed -e "s/<%= hostName %>/$host_ip:$PORT/" \
     -e "s/<%= xcodeChecksum %>/$xcode_checksum/" \
     "$SCRIPT_DIR/xcode.rb.template" > "$formula"
 
+# Ensure files served have world read permission
+chmod a+r $formula
+
 # Serve
 cd "$SCRIPT_DIR" && python3 -m http.server --bind "$host_ip" "$PORT"
