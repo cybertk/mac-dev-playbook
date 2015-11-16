@@ -2,3 +2,5 @@
 xcode.rb
 
 *.dmg
+*.dmg.checksum
+*.md5
